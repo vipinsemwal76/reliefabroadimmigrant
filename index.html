@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relief Overseas Consultant | Study & Settle Abroad</title>
+    <style>
+        /* --- General Styles --- */
+        :root {
+            --primary-color: #0d2c54; /* Navy Blue */
+            --accent-color: #d4a017; /* Gold */
+            --light-bg: #f8f9fa;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header / Navigation --- */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(rgba(13, 44, 84, 0.8), rgba(13, 44, 84, 0.8)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #bfa546;
+        }
+
+        /* --- About Section --- */
+        .section {
+            padding: 60px 0;
+        }
+
+        .about {
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* --- Countries Grid --- */
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .country-card {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .country-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h4 {
+            color: var(--primary-color);
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .card-body p {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .contact-badge {
+            display: block;
+            background-color: #e9ecef;
+            color: var(--primary-color);
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content p {
+            margin: 5px 0;
+        }
+
+        .contact-link {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* --- Mobile Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-wrapper { flex-direction: column; gap: 10px; }
+            nav ul { gap: 15px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">RELIEF OVERSEAS</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Future Abroad Starts Here</h1>
+            <p>Specializing in helping individuals achieve their dreams of working, studying, or settling abroad with personalized guidance.</p>
+            <a href="#contact" class="btn">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Who We Are</h2>
+            <p style="max-width: 800px; margin: 0 auto;">
+                At <strong>RELIEF OVERSEAS CONSULTANT</strong>, we assist with visa applications, job placements, educational enrollments, and relocation services across various countries. Led by our dedicated team, we provide personalized guidance for international opportunities. Whether you are looking to work in tech, study in world-class universities, or settle with your family, we are here to guide you.
+            </p>
+        </div>
+    </section>
+
+    <section id="destinations" class="section">
+        <div class="container">
+            <h2 class="section-title">Destinations & Opportunities</h2>
+            <div class="countries-grid">
+
+                <div class="country-card">
+                    <div class="card-header">Canada</div>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>High demand for skilled workers in tech, healthcare, and trades. Express Entry available.</p>
+                        <h4>Why Choose?</h4>
+                        <p>Strong economy, quality of life, pathways to citizenship.</p>
+                        <h4>Requirements</h4>
+                        <p>IELTS/TOEFL, credentials, job offers. Time: 6-12 months.</p>
+                        <div class="contact-badge">Contact: VIPIN</div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <div class="card-header">Australia</div>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>Skilled migration for engineers, nurses, IT. World-class universities.</p>
+                        <h4>Why Choose?</h4>
+                        <p>Vibrant culture, excellent healthcare, post-study work rights.</p>
+                        <h4>Requirements</h4>
+                        <p>Skills assessment, health checks, English proficiency. Time: 4-8 months.</p>
+                        <div class="contact-badge">Contact: ANAMIKA</div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <div class="card-header">United Kingdom</div>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>Work visas for graduates, skilled workers, entrepreneurs.</p>
+                        <h4>Why Choose?</h4>
+                        <p>Rich history, diverse job market, easy access to Europe.</p>
+                        <h4>Requirements</h4>
+                        <p>Employer sponsorship, degree equivalency. Time: 3-6 months.</p>
+                        <div class="contact-badge">Contact: VIPIN</div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <div class="card-header">Germany</div>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>Job Seeker Visa (Engineering, IT, Mfg). EU Blue Card available.</p>
+                        <h4>Why Choose?</h4>
+                        <p>Strong economy, free education in public universities.</p>
+                        <h4>Requirements</h4>
+                        <p>Job contract, German B1 level. Time: 2-4 months.</p>
+                        <div class="contact-badge">Contact: VIPIN</div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <div class="card-header">New Zealand</div>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>Skilled Migrant Category. Ideal for healthcare & agriculture.</p>
+                        <h4>Why Choose?</h4>
+                        <p>Stunning landscapes, work-life balance, family-friendly.</p>
+                        <h4>Requirements</h4>
+                        <p>Points-based (Age, Qualification). Time: 6-12 months.</p>
+                        <div class="contact-badge">Contact: ANAMIKA</div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <div class="card-header">UAE</div>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>Finance, tourism, construction. Hubs in Dubai & Abu Dhabi.</p>
+                        <h4>Why Choose?</h4>
+                        <p>Tax-free income, modern infrastructure.</p>
+                        <h4>Requirements</h4>
+                        <p>Job offer, medical fitness, NOC. Time: 1-3 months.</p>
+                        <div class="contact-badge">Contact: VIPIN</div>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <div class="card-header">Singapore</div>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>Employment Pass & Personalised Employment Pass.</p>
+                        <h4>Why Choose?</h4>
+                        <p>High salaries, efficient systems, gateway to Asia.</p>
+                        <h4>Requirements</h4>
+                        <p>Degree, work experience, salary thresholds. Time: 2-4 weeks.</p>
+                        <div class="contact-badge">Contact: ANAMIKA</div>
+                    </div>
+                </div>
+
+            </div>
+            <p style="text-align: center; margin-top: 30px;">
+                <em>We also support USA, Ireland, Sweden, and more!</em>
+            </p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <h2>Contact Us</h2>
+            <p>Let RELIEF OVERSEAS CONSULTANT guide you to a brighter future abroad!</p>
+            <br>
+            <p><strong>CEO:</strong> Vipin Semwal</p>
+            <p><strong>Phone:</strong> <a href="tel:+916397004606" class="contact-link">+91-6397004606</a></p>
+            <p><strong>Email:</strong> <a href="mailto:vipinsemwal76@gmail.com" class="contact-link">vipinsemwal76@gmail.com</a></p>
+            <br>
+            <p style="font-size: 0.8rem; opacity: 0.8;">&copy; 2026 Relief Overseas Consultant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
